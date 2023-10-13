@@ -18,9 +18,10 @@ public class Group {
         return id;
     }
 
-    public Group(){}
+    public Group() {
+    }
 
-    public Group(ArrayList<HotDrinks> drinksList, Authomat authomat, Integer id){
+    public Group(ArrayList<HotDrinks> drinksList, Authomat authomat, Integer id) {
         this.drinksList = drinksList;
         this.id = id;
         this.authomat = authomat;
@@ -30,7 +31,7 @@ public class Group {
         this.drinksList = drinksList;
     }
 
-    public void addDrinks(HotDrinks hotDrinks){
+    public void addDrinks(HotDrinks hotDrinks) {
         this.drinksList.add(hotDrinks);
     }
 
@@ -55,7 +56,7 @@ public class Group {
         return authomat;
     }
 
-    public void createDrinks(String name, Integer price, Integer volume,Integer temp, Integer id){
+    public void createDrinks(String name, Integer price, Integer volume, Integer temp, Integer id) {
         hotDrinks.setId(id);
         hotDrinks.setName(name);
         hotDrinks.setPrice(price);
@@ -63,7 +64,7 @@ public class Group {
         hotDrinks.setTemp(temp);
     }
 
-    public void createAuthomat(String vid, String name, String productType){
+    public void createAuthomat(String vid, String name, String productType) {
         authomat.setName(name);
         authomat.setProductType(productType);
     }

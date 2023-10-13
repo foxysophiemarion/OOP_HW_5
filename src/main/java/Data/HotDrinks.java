@@ -4,7 +4,8 @@ public class HotDrinks extends Product {
 
     private Integer temp;
     private Integer id;
-    public HotDrinks(String name, Integer price, Integer volume,Integer temp, Integer id){
+
+    public HotDrinks(String name, Integer price, Integer volume, Integer temp, Integer id) {
         super(name, price, volume);
         this.temp = temp;
         this.id = id;

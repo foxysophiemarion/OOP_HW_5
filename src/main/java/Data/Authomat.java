@@ -16,7 +16,8 @@ public class Authomat implements IAuthomat {
         this.productType = productType;
         this.name = name;
     }
-    public Authomat(){
+
+    public Authomat() {
     }
 
     public String getProductType() {
@@ -52,35 +53,42 @@ public class Authomat implements IAuthomat {
                 ' ';
     }
 
-
     @Override
     public void initProduct() {
     }
+
     public void initProduct(List<HotDrinks> list) {
         this.hotDrinks = list;
     }
+
     @Override
     public String getProduct() {
         return null;
     }
+
     public String getProduct(String name) {
         list.clear();
         for (HotDrinks el : hotDrinks) {
-            if (el.getName().equals(name)) list.add(el);
+            if (el.getName().equals(name))
+                list.add(el);
         }
         return list.toString();
     }
+
     public String getProduct(int temp) {
         list.clear();
         for (HotDrinks el : hotDrinks) {
-            if (el.getTemp() <= temp) list.add(el);
+            if (el.getTemp() <= temp)
+                list.add(el);
         }
         return list.toString();
     }
+
     public String getProductPrice(int Price) {
         list.clear();
         for (HotDrinks el : hotDrinks) {
-            if (el.getPrice() <= Price) list.add(el);
+            if (el.getPrice() <= Price)
+                list.add(el);
         }
         return list.toString();
     }

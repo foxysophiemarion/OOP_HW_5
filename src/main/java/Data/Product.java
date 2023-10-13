@@ -5,7 +5,6 @@ public abstract class Product {
     protected Integer price;
     protected Integer volume;
 
-
     public Product(String name, Integer price, Integer volume) {
         this.name = name;
         this.price = price;
